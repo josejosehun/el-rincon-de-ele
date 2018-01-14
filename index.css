@@ -1,0 +1,366 @@
+/* ===== GENERAL SETTINGS ===== */
+
+* { /* General CSS reset */
+  box-sizing: border-box;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: turquoise url(assets/images/card-background-image.jpg) center center/cover no-repeat fixed; /* If the background image is unavailable, turquoise background color will work. */ /* I have to change the backround image. */
+  font-family: 'Open Sans', 'sans-serif', 'Arial', 'Times New Roman'; /* Declaring Open Sans as font family through the page. For headings, other font family will be used. */
+}
+
+a {
+  text-decoration: none; /* Eliminating underline from links. */
+}
+
+/* ====== SETTINGS FOR MOBILES ====== */
+
+/* == HEADER SETTINGS == */
+
+.flag-container {
+  padding: .5rem 0;
+  text-align: center; /* This rule middles the content of the unordered list. */
+}
+
+.flag-container-item {
+  display: inline-block; /* Putting the language marker flags in the same row. */
+  margin-right: 3vw;
+}
+
+.extreme-left-item {
+  margin-left: 3vw; /* To put the flags at the center. */
+}
+
+.extreme-right-item {
+  margin-right: 0; /* Lifting the margin-right rule from the hungarian flag to put the flags at the center. */
+}
+
+.nav-flag {
+  height: 1.4rem; /* Setting the same and appropriate size for the flags which don't have the same size originally. */
+  width: 2.8rem; /* Setting the same and appropriate size for the flags which don't have the same size originally. */
+}
+
+/* == MAIN SETTINGS == */
+
+/* Card settings */
+
+.card {
+  background-color: hsla(0, 0%, 100%, .5); /* To revise */
+  border: 1px solid grey;
+  border-radius: 10px;
+  box-shadow: 10px 10px 80px hsla(0, 0%, 0%, .8); /* To revise */
+  margin: 20vh 2vw 8vh;
+  padding: 3vh 3vw 2vh;
+}
+
+.profile {
+  margin-bottom: 3vh;
+}
+
+.profile-photo {
+  border: 1px solid grey;
+  border-radius: 35%;
+  float: left;
+  height: auto; /* Maintaining the original size scale. */
+  margin-right: 10%;
+  margin-top: -10vh;
+  width: 40vw;
+}
+
+.profile-datas {
+  float: left;
+  width: 40%;
+}
+
+.profile-datas h1,
+.profile-datas h2 {
+  font-family: 'Bree Serif', serif, 'Arial', 'Times New Roman'; /* Using Bree serif font for headings */
+  font-size: 1.5rem;
+  line-height: 1.2;
+  margin-bottom: 1vh;
+  text-align: center;
+}
+
+.profile-datas h2 {
+  color: teal;
+  font-size: 1.125rem;
+}
+
+.snap {
+  color: grey;
+  font-size: .6875rem;
+  font-weight: 700;
+  margin-bottom: .5rem;
+  text-align: center;
+}
+
+.map {
+  line-height: 1.3;
+  text-align: center;
+}
+
+.links {
+  float: left;
+  margin-top: -42%; /* Following the top margin of the profile photo. */
+  width: 50%; /* Maintaining the width of the other parts of the profile. */
+}
+
+.links h2 {
+  color: teal;
+  font-family: 'Bree Serif', serif, 'Arial', 'Times New Roman'; /* Using Bree serif font for headings */
+  font-size: 1.125rem;
+  margin-bottom: 2vh;
+  text-align: center;
+}
+
+.links ul {
+  list-style-type: none; /* Eliminating list markers. */
+}
+
+.links a,
+.other-icons {
+  color: blue;
+}
+
+.social-icons-container {
+  margin-bottom: 1vh;
+  text-align: center;
+}
+
+.social-icons {
+  display: inline-block; /* Placing the social media icons in the same row. */
+  font-size: 1.5rem;
+  margin: 0 2vw;
+}
+
+.other-icons-container {
+  font-size: 1.1rem;
+  line-height: 1.4;
+  width: 150%; /* Bigger width to have enough space for contact details. /* I have to change this size. */
+}
+
+.profile::after { /* Clearfix after the profile. */
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.presentation {
+  font-size: 1rem;
+  line-height: 1.4;
+  text-align: justify;
+}
+
+/* Advise settings */
+
+.advise {
+  background-color: hsla(0, 0%, 100%, .5); /* To revise */
+  border: 1px solid grey;
+  border-radius: 5px;
+  box-shadow: 10px 10px 80px hsla(0, 0%, 0%, .8); /* To revise */
+  color: white;
+  font-size: 1rem;
+  font-style: italic;
+  line-height: 1.4;
+  margin: 0 2vw 5vh;
+  padding: 2vh 2vw;
+  text-align: justify;
+}
+
+.advise p:first-child { /* This rule only is valid for the first paragraph of the "advise" div. */
+  margin-bottom: 2vh;
+}
+
+/* == FOOTER SETTINGS == */
+
+footer {
+  background-color: hsla(0, 0%, 100%, .2); /* To revise */
+  color: green; /* I have to change the color to put the text more visible. */
+  font-size: .8rem;
+  padding: 1vh 0;
+  text-align: center;
+}
+
+/* == HOVER SETTINGS == */
+
+.profile-photo:hover {
+  transform: scale(1.1,1.1); /* Specifying hover standing of the profile photo. */
+}
+
+a:hover {
+  color: darkblue; /* Changing the color of the links when mouse hovers. */
+}
+
+@media (min-width: 375px) {
+  
+  .links {
+    margin-top: -20%;
+  }
+}
+
+@media (min-width: 425px) {
+  
+  .links {
+    margin-top: 2%;
+  }
+}
+
+
+
+/* ====== SETTINGS FOR TABLETS ====== */
+
+@media (min-width: 768px) {
+  
+  .flag-container {
+  padding: 1rem 0;
+  }
+  
+  .profile {
+    margin-bottom: 4vh;
+  }
+  
+  .profile-photo {
+    margin-right: 3.5vw;
+    width: 25vw;
+  }
+  
+  .profile-datas {
+    margin-right: 4vw;
+    width: 25vw;
+  }
+  
+  .links {
+    margin-top: 0;
+    width: 30vw;
+  }
+  
+  .links h2 {
+    font-size: 1.3rem;
+  }
+  
+  .social-icons-container {
+    margin-bottom: 2vh;
+  }
+  
+  .social-icons {
+    margin: 0 1.8vw;
+  }
+  
+  .other-icons-container {
+    line-height: 1.5;
+    width: 31vw;
+  }
+  
+  .presentation,
+  .advise {
+    font-size: 1.125rem;
+  }
+  
+  footer {
+    font-size: .9rem;
+  }
+}
+
+/* ====== SETTINGS FOR DESKTOPS ====== */
+
+@media (min-width: 1024px) {
+  
+  .flag-container {
+  padding-top: 2rem;
+  }
+  
+  .flag-container-item {
+    margin-right: 4vw;
+  }
+  
+  .extreme-left-item {
+  margin-left: 4vw; /* To put the flags at the center. */
+}
+  
+  .extreme-right-item {
+  margin-right: 0; /* Lifting the margin-right rule from the hungarian flag to put the flags at the center. */
+}
+  
+  .nav-flag {
+    height: 1.8rem;
+    width: 3.2rem;
+  }
+  
+  .card {
+    margin: 20vh auto 8vh;
+    width: 75vw;
+  }
+  
+  .profile-photo {
+    width: 18vw;
+  }
+  
+  .profile-datas,
+  .links {
+    width: 21vw;
+  }
+  
+  .social-icons {
+    margin: 0 1.4vw;
+  }
+  
+  .advise {
+    margin: 0 auto 5vh;
+    width: 75vw;
+  }
+  
+}
+
+/* ====== SETTINGS FOR LARGE DESKTOPS ====== */
+
+@media (min-width: 1440px) {
+  
+  .profile-datas {
+    width: 22vw;
+  }
+  
+  .profile-datas h1 {
+    font-size: 2rem;
+    margin-bottom: 2vh;
+  }
+  
+  .profile-datas h2 {
+  font-size: 1.5rem;
+  margin-bottom: 2vh;
+  }
+  
+  .snap {
+    font-size: .8rem;
+    margin-bottom: .6rem;
+  }
+  
+  .map {
+    font-size: 1.1rem;
+    line-height: 1.4;
+  }
+  
+  .links {
+    width: 20vw;
+  }
+  
+  .links h2 {
+    font-size: 1.5rem;
+  }
+  
+  .social-icons {
+    font-size: 1.7rem;
+  }
+  
+  .other-icons-container {
+    line-height: 1.7;
+  }
+  
+  .presentation,
+  .advise {
+    font-size: 1.25rem;
+  }
+
+}
