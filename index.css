@@ -7,9 +7,15 @@
   padding: 0;
 }
 
+html { /* Settings for sticky footer. */
+  min-height: 100%;
+  position: relative;
+}
+
 body{
   background: turquoise url(assets/images/card-background-image.jpg) center center/cover no-repeat fixed; /* If the background image is unavailable, turquoise background color will work. */ /* I have to change the backround image. */
   font-family: 'Open Sans', 'sans-serif', 'Arial', 'Times New Roman'; /* Declaring Open Sans as font family through the page. For headings, other font family will be used. */
+  margin-bottom: 50px; /* Setting for sticky footer. */
 }
 
 a {
@@ -46,6 +52,10 @@ a {
 /* == MAIN SETTINGS == */
 
 /* Card settings */
+
+main {
+  margin-bottom: calc(50px + 5vh); /* The sticky footer plus a adequate distance. */
+}
 
 .card {
   background-color: hsla(0, 0%, 100%, .5); /* To revise */
@@ -165,7 +175,7 @@ a {
   font-size: 1rem;
   font-style: italic;
   line-height: 1.4;
-  margin: 0 2vw 5vh;
+  margin: 0 2vw;
   padding: 2vh 2vw;
   text-align: justify;
 }
@@ -178,10 +188,14 @@ a {
 
 footer {
   background-color: hsla(0, 0%, 100%, .2); /* To revise */
+  bottom: 0; /* Setting for sticky footer. */
   color: green; /* I have to change the color to put the text more visible. */
   font-size: .8rem;
+  height: 50px; /* Setting for sticky footer. */
   padding: 1vh 0;
+  position: absolute; /* Setting for sticky footer. */
   text-align: center;
+  width: 100%; /* Setting for sticky footer. */
 }
 
 /* == HOVER SETTINGS == */
