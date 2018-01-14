@@ -136,7 +136,7 @@ main {
 }
 
 .social-icons-container {
-  margin-bottom: 1vh;
+  margin-bottom: 4vh;
   text-align: center;
 }
 
@@ -149,7 +149,7 @@ main {
 .other-icons-container {
   font-size: 1.1rem;
   line-height: 1.4;
-  width: 150%; /* Bigger width to have enough space for contact details. /* I have to change this size. */
+  width: 200%; /* Bigger width to have enough space for contact details. /* I have to change this size. */
 }
 
 .profile::after { /* Clearfix after the profile. */
@@ -208,10 +208,28 @@ a:hover {
   color: darkblue; /* Changing the color of the links when mouse hovers. */
 }
 
+/* SETTINGS FOR VARIOUS MOBILE-WIDTH */
+
+@media (min-width: 330px) {
+  
+  .links {
+    margin-top: -28%; /* Separating the contacts panel from the image. */
+  }
+  .other-icons-container {
+    width: 170%; /* Placing icons and texts in the same line. */
+  }
+}
+
 @media (min-width: 375px) {
   
   .links {
     margin-top: -20%;
+  }
+  .social-icons-container {
+  margin-bottom: 1vh;
+  }
+  .other-icons-container {
+    width: 150%;
   }
 }
 
