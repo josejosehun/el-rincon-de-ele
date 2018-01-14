@@ -13,7 +13,7 @@ html { /* Settings for sticky footer. */
 }
 
 body{
-  background: turquoise url(assets/images/card-background-image.jpg) center center/cover no-repeat fixed; /* If the background image is unavailable, turquoise background color will work. */ /* I have to change the backround image. */
+  background: turquoise url(assets/images/card-background-image.jpg) center center/cover no-repeat fixed; /* If the background image is unavailable, turquoise background color will work. */
   font-family: 'Open Sans', 'sans-serif', 'Arial', 'Times New Roman'; /* Declaring Open Sans as font family through the page. For headings, other font family will be used. */
   margin-bottom: 50px; /* Setting for sticky footer. */
 }
@@ -54,14 +54,14 @@ a {
 /* Card settings */
 
 main {
-  margin-bottom: calc(50px + 5vh); /* The sticky footer plus a adequate distance. */
+  margin-bottom: calc(50px + 5vh); /* The sticky footer height plus an adequate distance. */
 }
 
 .card {
-  background-color: hsla(0, 0%, 100%, .5); /* To revise */
+  background-color: hsla(0, 0%, 100%, .5);
   border: 1px solid grey;
   border-radius: 10px;
-  box-shadow: 10px 10px 80px hsla(0, 0%, 0%, .8); /* To revise */
+  box-shadow: 10px 10px 80px hsla(0, 0%, 0%, .8);
   margin: 20vh 2vw 8vh;
   padding: 3vh 3vw 2vh;
 }
@@ -100,7 +100,7 @@ main {
 }
 
 .snap {
-  color: grey;
+  color: rgb(75,75,75);
   font-size: .6875rem;
   font-weight: 700;
   margin-bottom: .5rem;
@@ -167,10 +167,10 @@ main {
 /* Advise settings */
 
 .advise {
-  background-color: hsla(0, 0%, 100%, .5); /* To revise */
+  background-color: hsla(0, 0%, 100%, .5);
   border: 1px solid grey;
   border-radius: 5px;
-  box-shadow: 10px 10px 80px hsla(0, 0%, 0%, .8); /* To revise */
+  box-shadow: 10px 10px 80px hsla(0, 0%, 0%, .8);
   color: white;
   font-size: 1rem;
   font-style: italic;
@@ -187,9 +187,9 @@ main {
 /* == FOOTER SETTINGS == */
 
 footer {
-  background-color: hsla(0, 0%, 100%, .2); /* To revise */
+  background-color: hsla(0, 0%, 100%, .2);
   bottom: 0; /* Setting for sticky footer. */
-  color: green; /* I have to change the color to put the text more visible. */
+  color: green;
   font-size: .8rem;
   height: 50px; /* Setting for sticky footer. */
   padding: 1vh 0;
@@ -201,7 +201,7 @@ footer {
 /* == HOVER SETTINGS == */
 
 .profile-photo:hover {
-  transform: scale(1.1,1.1); /* Specifying hover standing of the profile photo. */
+  transform: scale(1.1, 1.1); /* Specifying hover standing of the profile photo. */
 }
 
 a:hover {
