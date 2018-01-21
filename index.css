@@ -171,7 +171,7 @@ main {
   border: 1px solid grey;
   border-radius: 5px;
   box-shadow: 10px 10px 80px hsla(0, 0%, 0%, .8);
-  color: white;
+  color: rgb(0,50,100); /* Original color was white but on small devices there is a problem with visibility of the text, so color is changed for small devices. */
   font-size: 1rem;
   font-style: italic;
   line-height: 1.4;
@@ -340,6 +340,7 @@ a:hover {
   }
   
   .advise {
+    color: rgb(255,255,255);
     margin: 0 auto 5vh;
     width: 75vw;
   }
