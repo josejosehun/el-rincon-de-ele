@@ -12,8 +12,13 @@ html { /* Settings for sticky footer. */
   position: relative;
 }
 
-body{
-  background: turquoise url(assets/images/card-background-image.jpg) center center/cover no-repeat fixed; /* If the background image is unavailable, turquoise background color will work. */
+body{ /* Background properties originally were together in "background" property but I changed it for visibility in Safari. */
+  background-color: #40E0D0; /* If the background image is unavailable, turquoise background color will work. */
+  background-image: url(assets/images/card-background-image.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
   font-family: 'Open Sans', 'sans-serif', 'Arial', 'Times New Roman'; /* Declaring Open Sans as font family through the page. For headings, other font family will be used. */
   margin-bottom: 50px; /* Setting for sticky footer. */
 }
