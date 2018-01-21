@@ -38,7 +38,7 @@ a {
 
 .flag-container-item {
   display: inline-block; /* Putting the language marker flags in the same row. */
-  margin-right: 3vw;
+  margin-right: 3%;
 }
 
 .extreme-left-item {
