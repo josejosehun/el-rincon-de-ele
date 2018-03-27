@@ -1,0 +1,148 @@
+/* GENERAL SETTINGS */
+
+* {
+  font-size: 100%;
+  font-size: 1rem;
+  margin: 0;
+  margin-bottom: 1.5rem; /* Dynamic distance */
+  padding: 0;
+}
+
+html {
+  margin-bottom: 0;
+}
+
+body  {
+  background-color: #40E0D0; /* If the background image is unavailable, turquoise background color will work. */
+  margin-bottom: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* MOBILE SETTINGS */
+
+/* Covering page */
+
+.cover {
+  background-image: url(assets/images/cover-background-image.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: table;
+  height: 100vh;
+  font-family: 'Cormorant Garamond', serif;
+  margin-bottom: 0;
+  text-align: center;
+  width: 100vw;
+}
+
+.wrapper {
+  display: table-cell;
+  margin-bottom: 0;
+  vertical-align: middle;
+}
+
+/* Welcome section */
+
+.welcome h1 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.welcome p {
+  font-size: 1.2rem;
+}
+
+/* Language changes */
+
+.flag-container li {
+  display: inline-block;
+  margin: auto 1rem;
+}
+
+.nav-flag {
+  margin-bottom: 0;
+}
+
+/* Menu table */
+
+.menu-buttons {
+  background-color: rgba(204, 255, 204, .4);
+  border: 1px solid #000000;
+  border-radius: 10px;
+  margin: 0 24.5vw;
+  padding: 1rem 0 0;
+  width: 50vw;
+}
+
+.button {
+  background-color: rgb(102, 255, 102);
+  border: 1px solid #000000;
+  border-radius: 4px;
+  color: #000000;
+  display: block;
+  font-weight: 700;
+  margin: 0 auto;
+  max-width: 20vw;
+  padding: .4rem .75rem;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+/* "Continue" button */
+
+.next {
+  -webkit-animation: mymove 2s infinite; /* Safari 4.0 - 8.0 */
+  animation: mymove 2s infinite;
+  background-color: rgb(0, 255, 255);
+  border: 1px solid #000000;
+  border-radius: 10px;
+  margin: 1.5rem 24.5vw 0;
+  max-height: 1rem;
+  padding: .5rem 0;
+  width: 50vw;
+}
+
+.next a {
+  color: #000000;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+/* Hover standings */
+
+.button:hover {
+  background-color: rgb(0, 128, 0);
+}
+
+.next:hover {
+  background-color: rgb(0, 153, 153);
+}
+
+/* Animation of .next class border */
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+    50% {border: 1px solid rgb(0, 255, 255);}
+}
+
+@keyframes mymove {
+    50% {border: 1px solid rgb(0, 255, 255);}
+}
+
+@media (max-height: 666px) {
+  * {
+    margin-bottom: 1.2rem;
+  }
+  
+  .next {
+    margin-top: 1rem;
+  }
+}
