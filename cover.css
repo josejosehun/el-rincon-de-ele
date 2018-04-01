@@ -4,7 +4,7 @@
   font-size: 100%;
   font-size: 1rem;
   margin: 0;
-  margin-bottom: 1.5rem; /* Dynamic distance */
+  margin-bottom: 1.4rem; /* Dynamic distance */
   padding: 0;
 }
 
@@ -75,11 +75,12 @@ li {
 
 .menu-buttons {
   background-color: rgba(204, 255, 204, .4);
-  border: 1px solid #000000;
+  border: 1px solid rgb(128, 128, 128);
   border-radius: 10px;
-  margin: 0 24.5vw;
+  box-shadow: 0px 0px 2px 5px rgb(145, 145, 145);
+  margin: 0 19.5vw;
   padding: 1rem 0 0;
-  width: 50vw;
+  width: 60vw;
 }
 
 .button {
@@ -90,7 +91,7 @@ li {
   display: block;
   font-weight: 700;
   margin: 0 auto;
-  max-width: 20vw;
+  max-width: 32vw;
   padding: .4rem .75rem;
   white-space: nowrap;
   vertical-align: middle;
@@ -104,7 +105,7 @@ li {
   background-color: rgb(0, 255, 255);
   border: 1px solid #000000;
   border-radius: 10px;
-  margin: 1.5rem 24.5vw 0;
+  margin: 1.4rem 24.5vw 0;
   max-height: 1rem;
   padding: .5rem 0;
   width: 50vw;
@@ -114,16 +115,6 @@ li {
   color: #000000;
   font-size: 1rem;
   font-weight: 700;
-}
-
-/* Hover standings */
-
-.button:hover {
-  background-color: rgb(0, 128, 0);
-}
-
-.next:hover {
-  background-color: rgb(0, 153, 153);
 }
 
 /* Animation of .next class border */
@@ -137,11 +128,35 @@ li {
     50% {border: 1px solid rgb(0, 255, 255);}
 }
 
+/* Hover standings */
+
+.button:hover {
+  background-color: rgb(0, 128, 0);
+}
+
+.next:hover {
+  -webkit-animation: none 0 ease; /* Safari 4.0 - 8.0 */
+  animation: none 0 ease; /* Suspending animation on hover standing. */
+  background-color: rgb(0, 153, 153);
+}
+
 @media (max-height: 666px) {
   * {
-    margin-bottom: 1.2rem;
+    margin-bottom: .95rem;
   }
   
+  body {
+    height: 100vh;
+  }
+  
+  .welcome h1 {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+  }
+  
+  .welcome p {
+    font-size: 1rem;
+  }
   .next {
     margin-top: 1rem;
   }
