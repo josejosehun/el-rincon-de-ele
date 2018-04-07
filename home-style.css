@@ -41,6 +41,7 @@ a {
   margin-right: 4.5vw;
   padding: 2vw;
   text-align: center;
+  white-space: nowrap;
   width: 32vw;
   background-color: lightgreen;
 }

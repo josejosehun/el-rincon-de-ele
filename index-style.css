@@ -1,20 +1,23 @@
 /* GENERAL SETTINGS */
 
 * {
+  box-sizing: border-box;
   font-size: 100%;
   font-size: 1rem;
   margin: 0;
-  margin-bottom: 1.4rem; /* Dynamic distance */
   padding: 0;
 }
 
 html {
-  margin-bottom: 0;
+  height: 100vh;
 }
 
 body  {
   background-color: #40E0D0; /* If the background image is unavailable, turquoise background color will work. */
-  margin-bottom: 0;
+}
+
+h1, p, nav, li {
+  margin-bottom: 1.4rem; /* Vertical rhytm */
 }
 
 a {
@@ -25,7 +28,7 @@ li {
   list-style-type: none;
 }
 
-/* MOBILE SETTINGS */
+/* SETTINGS FOR MOBILES */
 
 /* Covering page */
 
@@ -36,16 +39,14 @@ li {
   background-repeat: no-repeat;
   background-attachment: fixed;
   display: table;
-  height: 100vh;
   font-family: 'Cormorant Garamond', serif;
-  margin-bottom: 0;
+  height: 100vh;
   text-align: center;
   width: 100vw;
 }
 
 .wrapper {
   display: table-cell;
-  margin-bottom: 0;
   vertical-align: middle;
 }
 
@@ -67,11 +68,7 @@ li {
   margin: auto 1rem;
 }
 
-.nav-flag {
-  margin-bottom: 0;
-}
-
-/* Menu table */
+/* Menu list */
 
 .menu-buttons {
   background-color: rgba(204, 255, 204, .6);
@@ -79,7 +76,7 @@ li {
   border-radius: 10px;
   box-shadow: 0px 0px 2px 5px rgb(145, 145, 145);
   margin: 0 19.5vw;
-  padding: 1rem 0 0;
+  padding: 1.4rem 0 0;
   width: 60vw;
 }
 
@@ -91,8 +88,8 @@ li {
   display: block;
   font-weight: 700;
   margin: 0 auto;
-  max-width: 32vw;
-  padding: .4rem .75rem;
+  max-width: 34vw;
+  padding: .4rem .3rem;
   white-space: nowrap;
   vertical-align: middle;
 }
@@ -106,15 +103,15 @@ li {
   border: 1px solid #000000;
   border-radius: 10px;
   margin: 1.4rem 24.5vw 0;
-  max-height: 1rem;
-  padding: .5rem 0;
+  max-height: 2rem;
+  padding: .4rem 0;
   width: 50vw;
 }
 
 .next a {
   color: #000000;
-  font-size: 1rem;
   font-weight: 700;
+  line-height: 1rem;
 }
 
 /* Animation of .next class border */
@@ -140,9 +137,11 @@ li {
   background-color: rgb(0, 153, 153);
 }
 
-@media (max-height: 666px) {
-  * {
-    margin-bottom: .95rem;
+/* SETTINGS FOR SPECIAL MOBILE SIZES */
+
+@media (max-height: 640px) {
+  h1, p, nav, li {
+    margin-bottom: .8rem;
   }
   
   body {
@@ -157,8 +156,18 @@ li {
   .welcome p {
     font-size: 1rem;
   }
+  
+  .menu-buttons {
+    margin-bottom: .6rem;
+    padding: .8rem 0 0;
+  }
+  
+  .button {
+    max-width: 38vw;
+  }
+  
   .next {
-    margin-top: 1rem;
+    margin-top: .8rem;
   }
 }
 
@@ -197,6 +206,28 @@ li {
   
   * {
     margin-bottom: 2.5rem;
+  }
+  
+  .menu-buttons {
+    margin: 0 24.8vw;
+    width: 50vw;
+  }
+  
+  .menu-buttons li {
+    display: inline-block;
+    margin-left: 2vw;
+    margin-right: 5vw;
+  }
+  
+  .second-item {
+    margin-right: 0;
+  }
+  
+  .button {
+    
+    margin: 0;
+    max-width: 16vw;
+    width: 16vw;
   }
   
 }
