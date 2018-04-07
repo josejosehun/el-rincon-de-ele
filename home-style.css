@@ -1,0 +1,83 @@
+﻿/* GENERAL SETTINGS */
+
+*{
+  font-size: 100%;
+  margin: 0;
+  margin-bottom: 1.5rem; /* Vertical rhytm */
+  padding: 0;
+}
+
+body {
+  background-color: aqua;
+  background-image
+}
+
+a {
+  text-decoration: none;
+}
+
+/* SETTINGS FOR MOBILES */
+
+#projectionCanvas {
+  display: none;
+} /* It doesn't make sense to display projection on mobiles because the header isn't fixed in this case. */
+
+.menu {
+  margin-top: 1.5rem;
+}
+
+.menu-items {
+  padding: 0 8vw;
+  /*background-color: lightblue;*/
+}
+
+.menu-item {
+  border: 1px solid rgb(128, 128, 128);
+  border-radius: 5px;
+  display: inline-block;
+  font-size: 0.85rem;
+  list-style-type: none;
+  margin-bottom: 1rem;
+  margin-right: 4.5vw;
+  padding: 2vw;
+  text-align: center;
+  width: 32vw;
+  background-color: lightgreen;
+}
+
+.second-column {
+  margin-right: 0;
+}
+
+.final-item {
+  margin: 0 20vw 1rem;
+}
+
+.menu-items a {
+  color: red;
+}
+
+h1 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+h2 a {
+  color: red;
+}
+
+p {
+  font-size: 1rem;
+}
+
+/* Hover standings */
+
+.menu-item:hover {
+  background-color: green;
+  border: 1px solid green;
+}

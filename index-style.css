@@ -74,7 +74,7 @@ li {
 /* Menu table */
 
 .menu-buttons {
-  background-color: rgba(204, 255, 204, .4);
+  background-color: rgba(204, 255, 204, .6);
   border: 1px solid rgb(128, 128, 128);
   border-radius: 10px;
   box-shadow: 0px 0px 2px 5px rgb(145, 145, 145);
@@ -160,4 +160,43 @@ li {
   .next {
     margin-top: 1rem;
   }
+}
+
+/* SETTINGS FOR DESKTOP */
+
+@media (min-width: 1024px) {
+ 
+  * {
+    margin-bottom: 2rem;
+  }
+
+  .welcome h1 {
+    font-size: 2rem;
+    line-height: 2.6rem;
+  }
+  
+  .welcome p {
+    font-size: 1.5rem;
+  }
+  
+  .button {
+    font-size: 1.2rem;
+  }
+  
+  .next {
+    max-height: 1.2rem;
+  }
+  .next a {
+    font-size: 1.2rem;
+  }
+}
+
+/* SETTINGS FOR LARGE DESKTOP */
+
+@media (min-width: 1440px) {
+  
+  * {
+    margin-bottom: 2.5rem;
+  }
+  
 }
